@@ -1,0 +1,9 @@
+(version 1)
+
+(rule "Original hole-to-copper clearance"
+    (constraint hole_clearance (min 0.25mm)))
+
+# The published USB4105 land pattern has smaller contact-to-locator spacing.
+(rule "USB4105 locating hole to contact"
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && ((A.memberOfFootprint('J1') && B.memberOfFootprint('J1')) || (A.memberOfFootprint('J3') && B.memberOfFootprint('J3')))")
+    (constraint hole_clearance (min 0.15mm)))

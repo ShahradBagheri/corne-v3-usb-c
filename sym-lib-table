@@ -1,0 +1,5 @@
+(sym_lib_table
+ (version 7)
+ (lib (name "kbd") (type "KiCad") (uri "${KIPRJMOD}/kbd/kicad-symbols/kbd.kicad_sym") (options "") (descr "Original Corne symbols"))
+ (lib (name "SplitUSB") (type "KiCad") (uri "${KIPRJMOD}/split-usb-c.kicad_sym") (options "") (descr "Corne USB-C split port"))
+)
